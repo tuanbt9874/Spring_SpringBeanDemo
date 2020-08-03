@@ -17,24 +17,28 @@ public class VietnameseAlphabet {
 		this.character4 = character4;
 	}
 	public String getCharacter1() {
+		System.out.println("Character : " + character1);
 		return character1;
 	}
 	public void setCharacter1(String character1) {
 		this.character1 = character1;
 	}
 	public String getCharacter2() {
+		System.out.println("Character : " + character2);
 		return character2;
 	}
 	public void setCharacter2(String character2) {
 		this.character2 = character2;
 	}
 	public String getCharacter3() {
+		System.out.println("Character : " + character3);
 		return character3;
 	}
 	public void setCharacter3(String character3) {
 		this.character3 = character3;
 	}
 	public String getCharacter4() {
+		System.out.println("Character : " + character4);
 		return character4;
 	}
 	public void setCharacter4(String character4) {

@@ -22,7 +22,12 @@ public class App
     	Character character = (Character) context.getBean("character");
     	character.getCharacter1();
     	character.getCharacter4();
-    	
+    	System.out.println();
+    	VietnameseAlphabet vietnamAlphabet = (VietnameseAlphabet) context.getBean("vietnameseAlphabet");
+    	vietnamAlphabet.getCharacter1();
+    	vietnamAlphabet.getCharacter2();
+    	vietnamAlphabet.getCharacter3();
+    	vietnamAlphabet.getCharacter4();
     	
     	context.registerShutdownHook();
     }

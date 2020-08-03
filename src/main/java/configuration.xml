@@ -22,7 +22,13 @@
 		<property name = "character2" value = "Ă"/>
 		<property name = "character3" value = "Â"/>
 	</bean>
+	<!--
+		Ta thấy là vietnameseAlphabet không cần phải điền toàn bộ các property mà nó chì cần get các properties của Cha xuống
+		Nhằm làm giảm số lương dự liệu trong file Configuration => giúp nó gọn hơn
+		
+		
 	
+	  -->
 	
    	<bean class = "com.tuna.spring.bean_post_processors.InitMessage" />
    
