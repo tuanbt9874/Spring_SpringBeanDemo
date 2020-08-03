@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id = "message" class = "com.tuna.spring.bean_post_processors.Message"
+      init-method = "init" destroy-method = "destroy">
+      <property name = "message" value = "Hello World!"/>
+   	</bean>
+
+	<bean id = "text" class = "com.tuna.spring.bean_post_processors.Text" 
+	 init-method = "init" destroy-method = "destroy">
+		<property name = "text" value = "I text yous"/>
+	</bean>
+	
+	<bean id = "character" class = "com.tuna.spring.bean_post_processors.Character" >
+		<property name = "character1" value = "A"/>
+		<property name = "character4" value = "B"/>
+	</bean>
+	
+	<bean id = "vietnameseAlphabet" class = "com.tuna.spring.bean_post_processors.VietnameseAlphabet" parent="character">
+		<property name = "character2" value = "Ă"/>
+		<property name = "character3" value = "Â"/>
+	</bean>
+	
+	
+   	<bean class = "com.tuna.spring.bean_post_processors.InitMessage" />
+   
+</beans>
